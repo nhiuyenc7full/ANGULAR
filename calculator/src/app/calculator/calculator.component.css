@@ -1,0 +1,12 @@
+button {
+    width: 58px;
+    height: 58px;
+}
+.display {
+    width: 270px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 58px;
+    font-size: 150%;
+}

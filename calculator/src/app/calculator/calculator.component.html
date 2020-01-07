@@ -1,0 +1,38 @@
+<div style="border: 1px solid black; border-radius: 5px; width: 300px">
+  <div style="border: 0px; border-radius: 5px; width: 300px;  padding: 15px">
+    <div width="150px">
+      <div class="text-right display">{{input}}</div>
+      <table cellspacing="0" cellpadding="5">
+        <tr>
+          <td><button class="btn btn-outline-primary" value="+" (click) = "onClickOperator($event)">+</button></td>
+          <td><button class="btn btn-outline-primary" value="-" (click) = "onClickOperator($event)">-</button></td>
+          <td><button class="btn btn-outline-primary" value="*" (click) = "onClickOperator($event)">*</button></td>
+          <td><button class="btn btn-outline-primary" value="/" (click) = "onClickOperator($event)">/</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-outline-primary" value="7" (click) = "onClickNumber($event)">7</button></td>
+          <td><button class="btn btn-outline-primary" value="8" (click) = "onClickNumber($event)">8</button></td>
+          <td><button class="btn btn-outline-primary" value="9" (click) = "onClickNumber($event)">9</button></td>
+          <td rowspan="4">
+            <button class="btn btn-primary" (click) = 'calculate()'>=</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-outline-primary" value="4" (click) = "onClickNumber($event)">4</button></td>
+          <td><button class="btn btn-outline-primary" value="5" (click) = "onClickNumber($event)">5</button></td>
+          <td><button class="btn btn-outline-primary" value="6" (click) = "onClickNumber($event)">6</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-outline-primary" value="1" (click) = "onClickNumber($event)">1</button></td>
+          <td><button class="btn btn-outline-primary" value="2" (click) = "onClickNumber($event)">2</button></td>
+          <td><button class="btn btn-outline-primary" value="3" (click) = "onClickNumber($event)">3</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-outline-primary" value="0" (click) = "onClickNumber($event)">0</button></td>
+          <td><button class="btn btn-outline-primary" value="." (click) = "onClickNumber($event)">.</button></td>
+          <td><button class="btn btn-danger" (click) = "reset()">AC</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
